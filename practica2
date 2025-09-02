@@ -1,0 +1,21 @@
+frase = input("Ingrese una frase: ")
+palabras = frase.split()
+
+print("Lista de palabras: ", palabras)
+
+for  palabra in palabras :
+    print(palabra.upper())
+
+cnt = input("Palabra que se quiere contar en la frase: ")
+
+print("La palabra \"" + cnt + "\" aparece", frase.count(cnt), "vez/veces")
+
+old = input("Palabra que se quiere remplazar (vieja): ")
+new = input("Palabra que se quiere poner en la frase (nueva): ")
+
+if frase.replace(old, new) :
+    print("Frase modificada:", frase.replace(old, new))
+else :
+    print("No se pudo modificar:")
+
+
